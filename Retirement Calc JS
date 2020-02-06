@@ -1,0 +1,107 @@
+
+// Custom message on the page depending on the time of day.
+let dateToday = new Date();
+let todaysTime = dateToday.getHours();
+const greeting = document.getElementById("timeGreeting");
+
+//troubleshooting datetime
+// alert("Today is " + todaysTime);
+
+if(todaysTime < 12){
+  greeting.innerHTML = "Good Morning!";
+}
+else if(todaysTime >= 12 || todaysTime <= 17){
+  greeting.innerHTML = "Good Afternoon!";
+}
+else
+{
+  greeting.innerHTML = "Good Evening!";
+} 
+
+
+// To throw alert boxes when clicked by user.
+  document.getElementById("pReturn").onclick =  function pReturnFunc(){
+    alert("Enter the percentage as a decimal. Example: 5% would be .05");
+  }
+  document.getElementById("aIPY").onclick = function aIPYFunc(){
+    alert("Enter the money amount as a number with no $ or commas.");
+  }
+
+  // Calculate function when hitting calculate button
+  // Current year’s total Account= (Previous year's total account  * (1 +Percentage 
+  // Return)) + yearly investment.
+  // added parseInt/parseFloat in order to convert input to integers and decimal input
+  // else was read as string and concatenated calculation 
+  document.getElementById("submitButton").onclick = function calculate(){
+// Getting values from age and age at retirement inputs
+    let currentAge = parseInt(document.getElementById("age").value, 10);
+    let retireAge = parseInt(document.getElementById("aAR").value, 10);
+  // Totalling years
+    let totalYears = retireAge - currentAge;
+// get % invested and amount invested
+    let investedPerYear = parseInt(document.getElementById("aIPY").value, 10);
+    let percentageReturn = parseFloat(document.getElementById("pReturn").value, 10);
+
+// While Loop to generate Previous Year's Total based on totalYears/investedPerYear
+// and percentageReturn
+    let totalAmount = 0;
+    while(totalYears > 0){
+      /* troubleshooting
+      console.log("Totamt: " + totalAmount);
+      console.log("%ret: " + percentageReturn);
+      console.log("ipy: " + investedPerYear);
+      console.log("totyrs: " + totalYears);
+      */
+      totalAmount = (totalAmount * (1 + percentageReturn)) + investedPerYear;
+      totalYears--;
+    }
+    // extra credit using .toFixed method
+    alert("Your total amount invested is " + totalAmount.toFixed(2));
+  } // end of submitButton onclick event
+
+  // Formatting Time to 12hr clock with AM/PM 
+      let date = new Date();
+      let dayToday = date.getDay();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let ampm = hours > 12 ? "PM" : "AM";
+      //Troubleshooting
+      // hours = 23;
+      // minutes = 9;
+      if (hours > 12){
+        hours = hours - 12;
+      }
+      if (minutes < 10){
+        minutes = "0" + minutes;
+      }
+
+      const workDamnit = document.getElementById("timeNow");
+      workDamnit.innerHTML = "The current time is " + hours + ":" + minutes + " " + ampm + ".";
+      
+      // Formatting Javascript getDay to actual day of the week.
+      switch(dayToday){
+        case 0:
+          dayToday = "Sunday";
+          break;
+        case 1:
+          dayToday = "Monday";
+          break;
+        case 2:
+          dayToday = "Tuesday";
+          break;
+        case 3:
+          dayToday = "Wednesday";
+          break;
+        case 4:
+          dayToday = "Thursday";
+          break;
+        case 5:
+          dayToday = "Friday";
+          break;
+        case 6:
+          dayToday = "Saturday";
+          break; 
+      }
+      
+      const workDamnit2 = document.getElementById("dateNow");
+      workDamnit2.innerHTML = "The current day of the week is " + dayToday + ".";
