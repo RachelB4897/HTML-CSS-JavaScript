@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="keywords" content="OIS1520, Marion Technical College, MTC, Rachel Bridson">
+    <meta name="description" content="Stutdent work from Fall 2019 in OIS1520 at Marion Technical College.">
+    <title>Retirement Funds Calculator by Rachel Bridson for OIS1520A Fall 2019</title>
+    <link href="RCStylesheet.css" rel="stylesheet" type="text/css" />
+  </head>
+	<body>
+		<!-- Outer Banner Container -->
+		<div id="Banner" type="Banner">
+			<!-- Inner Banner Container -->
+			<div id="InnerBanner" type="id">
+			<!-- Student Name -->
+			<h1> Rachel Bridson</h1>
+			<!-- Greeting Container -->
+				<div id="Greeting" type="id">
+					<span id="timeGreeting" type="text"> </span> <p> Please share the following information to help us calculate the amount of money that would be in your retirement account when you retire.</p>
+				</div>
+			</div>
+		</div>
+		<!-- Content Container -->
+		<div id="BodyContent" type="content">
+			<div>
+				<!-- Adding a form tag allows the reset button to work, and after submit button clicked, it reloads the form to its original loading form -->
+				<form>
+				<!-- Input text boxes for information with alert boxes -->
+        	Your Current Age: <input id="age" type="input"/><br/><br/>
+          Age at Retirement: <input id="aAR" type="input"/><br/><br/>
+		      Percentage Return: <input id="pReturn" type="input", onclick="pReturnFunc"/><br/><br/>
+		      Consistent Amount Invested Per Year: <input id="aIPY" type="input" onclick="aIPYF()"/><br/><br/>
+
+          <!-- Submit and Reset Buttons -->
+				  <button id="submitButton" onclick="calculate()">Calculate</button> 
+				  &nbsp 
+				  <input type="reset" value="Reset"/> 
+				</form>
+			  </div>
+		</div>
+		<br>
+		<!-- No script reminder -->
+		<noscript>Sorry, your browser does not support JavaScript!</noscript>
+	</body>
+	<footer>	
+    		<!-- Foot Container -->
+		<div id="Footer" type="id">
+          <!-- Footer info -->
+      <h6 id="timeNow" class="clock"></h6>&nbsp<h6 id="dateNow" class="clock"></h6>
+			<h6>Visit the <a href="https://www.mtc.edu/"> Marion Technical College </a> Website to learn more about Interactive Media</h6>
+			<h6>&copy Rachel Bridson, Technical College, 2019</h6>
+			<!-- Footer Logo Link Container -->
+			<div id="FooterLogoLink" type="id">	
+      				<!-- Logo Image -->
+				<a href="https://www.mtc.edu/"><img src="logo.gif" alt="Marion Technical College Logo"></a>
+			</div>
+		</div>
+    <!-- Javascript link source -->
+   <script src="RetireCalc.js"></script>
+	</footer>
+</html>
