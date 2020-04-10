@@ -1,0 +1,72 @@
+using System;
+
+class MainClass {
+  
+  string name, race, gender, hairCol, eyeCol;
+  int age;
+  decimal height, weight;
+
+  public void eatStats(){
+    Console.WriteLine("Welcome to my Character Creator! Take some time to think before each question as you cannot yet go back to make fixes! Work-in-Progress!");
+
+    Console.WriteLine("Let's start with a general idea for your character. Consider your character's name, age, gender and etc.");
+
+    Console.Write("\nWhat is your character's name: ");
+    name = Console.ReadLine();
+
+    Console.Write("\nWhat is your character's gender: ");
+    gender = Console.ReadLine();
+
+    Console.Write("\nWhat race is your character: ");
+    race = Console.ReadLine();
+
+    Console.Write("\nHow old is your character: ");
+    age = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("\nNow that we've gotten the basics down, let's focus on the details.");
+
+    Console.Write("\nWhat is your character's hair colour: ");
+    hairCol = Console.ReadLine();
+
+    Console.Write("\nWhat is your character's eye colour: ");
+    eyeCol = Console.ReadLine();
+
+    Console.Write("\nHow tall is your character: ");
+    height = Convert.ToDecimal(Console.ReadLine());
+
+    Console.Write("\nHow heavy is your character in kilograms: ");
+    weight = Convert.ToDecimal(Console.ReadLine());
+
+    Console.WriteLine("Okay great! I think I've gotten everything I need for now. Let me prepare your character for you!");
+  }
+
+  public void pukeStats(){
+    Console.Write("\n\n**********************************");
+    Console.Write("\nName: " + name);
+    Console.Write("\nGender: " + gender);
+    Console.Write("\nRace: " + race);
+    Console.Write("\nAge: " + age);
+    Console.Write("\nHair Colour: " + hairCol);
+    Console.Write("\nEye Colour: " + eyeCol);
+    Console.Write("\nHeight: " + height);
+    Console.Write("\nWeight: " + weight);
+    Console.Write("\nName: " + name);
+    Console.Write("\n\n**********************************\t");
+
+  }
+  public static void Main (string[] args) {  
+      MainClass newGame = new MainClass();
+        newGame.eatStats();
+        newGame.pukeStats();
+        
+        string answer;
+        Console.WriteLine("Wasn't that fun!? Want to play again?");
+        answer = Console.ReadLine();
+        
+        if(answer == "yes" || answer == "Yes"){
+          newGame.eatStats();
+      } else if (answer == "no" || answer == "No"){
+        Console.WriteLine("Bye bye!");
+      }
+    }
+  }
