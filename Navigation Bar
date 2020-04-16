@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Practice - For Serious</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="navigationBar">
+      <div class="ddThing">
+        <button class="ddbtn">Nintendo
+          <i class="moveDown"></i>
+        </button>
+        <div class="ddContent">
+          <a href="https://www.youtube.com/watch?v=nhUR0mx-zSY">Mario</a>
+          <a href="https://www.youtube.com/watch?v=GdzrrWA8e7A">Legend of Zelda</a>
+          <a href="https://www.youtube.com/watch?v=4n9uoB73RwA">Kirby</a>
+        </div>
+      </div>
+        <div class="ddThing">
+          <button class="ddbtn">Square
+            <i class="moveDown"></i>
+          </button>
+        <div class="ddContent">
+            <a href="https://www.youtube.com/watch?v=mEoN_Xe-B-s&t=1295s">Chrono Trigger</a>
+            <a href="https://www.youtube.com/watch?v=GpOo_OzgxOE">Final Fantasy</a>
+            <a href="https://www.youtube.com/watch?v=mGK3usiX31s">Secret of Mana</a>
+        </div>
+      </div>
+        <div class="ddThing">
+          <button class="ddbtn">Indie
+            <i class="moveDown"></i>
+          </button>
+        <div class="ddContent">
+            <a href="https://www.youtube.com/watch?v=SxNcKXjfaQo&t=270s">Undertale</a>
+            <a href="https://www.youtube.com/watch?v=DBToMwdYBME">Gris</a>
+            <a href="https://www.youtube.com/watch?v=MeVFrt7BUyw">Ori and the Blind Forest</a>
+        </div>
+      </div>
+    </div>
+      <script src="script.js"></script>
+  </body>
+</html>
