@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Andrew's Mock-Up</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marck+Script&family=Old+Standard+TT&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+        <div class="headerSection">
+      <div class="headerMain">
+        <h1 id="titleHead" class="headers">Andrew's Pastries</h1>
+      </div>
+      <div class="socialMediaBar">
+        <a href="https://www.facebook.com/andrewspastries/" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a> 
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-yelp"></a>
+     </div>
+    </div> 
+    <div class="navBar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Catering</a></li>
+        <li><a href="#">Order Online</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div>
+    <div class="sectionHeader">
+      <hr>
+      <h1> Everyday Goodies </h1>
+      <h3>Available everyday until sold out!</h3>
+      <hr>
+      <div class="row">
+        <div class="column">
+          <img class="imageCSS" src="donuts.png">
+          <h2>Donuts</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="cookies.png">
+          <h2>Cookies</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="creampuffs.jpg">
+          <h2>Cream Puffs</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="cinnamonRoll.jpg">
+          <h2>Cinnamon Rolls</h2>
+        </div>
+      </div>
+      <hr>
+      <h1>Weekly Specials</h1>
+      <h3>Check our Facebook page for weekly specials!</h3>
+      <hr>
+      <div class="row">
+        <div class="column">
+          <img class="imageCSS" src="sweetBuns.png">
+          <h2>Sweet Buns</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="brownies.jpg">
+          <h2>Brownies</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="chocoStrawberries.jpg">
+          <h2>Chocolate Covered Strawberries</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="lemonSquares.png">
+          <h2>Lemon Squares</h2>
+        </div>
+      </div>
+      <hr>
+      <h1>Seasonal Goodies</h1>
+      <h3>Call and order today!</h3>
+      <hr>
+      <div class="row">
+        <div class="column">
+          <img class="imageCSS" src="buckeyes.jpg">
+          <h2>Buckeyes</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="tarts.png">
+          <h2>Tarts</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="cheesecake.jpg">
+          <h2>Cheesecakes</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="seasonal.jpg">
+          <h2>Seasonal Packages</h2>
+        </div>
+      </div>
+      <hr>
+      <h1>Order Only</h1>
+      <h3>Made upon request!</h3>
+      <hr>
+      <div class="row">
+        <div class="column">
+          <img class="imageCSS" src="fudge.jpg">
+          <h2>Fudges</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="pies.jpg">
+          <h2>Pies</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="cake.jpg">
+          <h2>Cakes</h2>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="cupcakes.jpg">
+          <h2>Cupcakes</h2>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+    <p>Andrew's Pastries 2020 | SitesWithRachel</p>
+  </div>
+    <style>
+      /* font-family: 'Satisfy', cursive; <-- Title Header
+font-family: 'Marck Script', cursive; <-- Title Header op 2
+font-family: 'Bebas Neue', cursive; <-- Page/Menu Header
+font-family: 'Old Standard TT', serif; <-- Content Font
+*/
+
+/* Header Stuff */
+.headerSection{
+  display:flex;
+}
+#titleHead{
+  font-family: 'Marck Script', cursive;
+  color: #D9A0AF;
+  margin-left:25%;
+  margin-top:1%;
+  margin-bottom:1%;
+  font-size: 62px;
+}
+.headerMain{
+  width:50%;
+}
+/* Social Media Bar Stuff */
+.socialMediaBar{
+  flex-grow:1;
+  overflow:auto;
+  margin-left:20%;
+  margin-top:1%;
+}
+.fa {
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  height: 40px;
+  padding:12px;
+}
+.fa:hover {
+  opacity: 0.7;
+  background-color: #BF6094; 
+}
+.fa-facebook {
+  background-color: #D9A0AF;
+  color: white;
+}
+.fa-twitter {
+  background-color: #D9A0AF;
+  color: white;
+}
+.fa-instagram {  
+  background-color: #D9A0AF;
+  color: white;
+}
+.fa-yelp{
+  background-color: #D9A0AF;
+  color: white;
+}
+.active {
+  background-color: #D9B573; 
+}
+/* Navigation Bar Shit */
+.navBar{
+  text-align:center;
+  width: wrap-content;
+  margin-bottom:3%;
+}
+ul {
+  list-style-type: none;
+  margin: auto;
+  overflow: hidden;
+  background-color: #D9A0AF;
+  padding-top:10px;
+  padding-bottom:10px;
+  width: wrap-content;
+  position:sticky;
+  position:-webkit-sticky;
+}
+li {
+  font-family: 'Bebas Neue', cursive;
+  font-size:26px;
+  display:inline-block;
+  text-align:center;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #BF6094;
+}
+/* Section Header Stuff */
+.sectionHeader {
+  font-family: 'Bebas Neue', cursive;
+  text-align:center;
+}
+/* Columns Stuff */
+.row{
+  margin-top:2%;
+  margin-bottom:2%;
+  display: flex;
+  justify-content: center;
+  height: 325px;
+  margin-left:10%;
+  margin-right:10%;
+  background-color:  #D9A0AF;
+}
+.column {
+  float: left;
+  width: 18%;
+  padding: 10px;
+}
+.column h2{
+  color:#000000;
+  font-family: 'Bebas Neue', cursive;
+  font-size:28px;
+}
+.column p {
+  font-family: 'Old Standard TT', serif;
+  font-size:18px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.imageCSS{
+  max-width:200px;
+  max-height:200px;
+}
+#footer{
+  text-align:center;
+  width: wrap-content;
+  height: 75px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #D9A0AF;
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family: 'Old Standard TT', serif;
+}
+<style>
+    <script src="script.js"></script>
+  </body>
+</html>
