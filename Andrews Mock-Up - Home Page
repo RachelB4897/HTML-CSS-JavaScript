@@ -76,6 +76,213 @@
   <div id="footer">
     <p>Andrew's Pastries 2020 | SitesWithRachel</p>
   </div>
+    <script>
+      /* Slideshow Stuff */
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+    </script>
+    <style>
+    /* font-family: 'Satisfy', cursive; <-- Title Header
+    font-family: 'Marck Script', cursive; <-- Title Header op 2
+    font-family: 'Bebas Neue', cursive; <-- Page/Menu Header
+    font-family: 'Old Standard TT', serif; <-- Content Font
+    */
+
+/* Header Stuff */
+.headerSection{
+  display:flex;
+}
+#titleHead{
+  font-family: 'Marck Script', cursive;
+  color: #D9A0AF;
+  margin-left:25%;
+  margin-top:1%;
+  margin-bottom:1%;
+  font-size: 62px;
+}
+.headerMain{
+  width:50%;
+}
+/* Social Media Bar Stuff */
+.socialMediaBar{
+  flex-grow:1;
+  overflow:auto;
+  margin-left:20%;
+  margin-top:1%;
+}
+.fa {
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  height: 40px;
+  padding:12px;
+}
+.fa:hover {
+  opacity: 0.7;
+  background-color: #BF6094; 
+}
+.fa-facebook {
+  background-color: #D9A0AF;
+  color: white;
+}
+.fa-twitter {
+  background-color: #D9A0AF;
+  color: white;
+}
+.fa-instagram {  
+  background-color: #D9A0AF;
+  color: white;
+}
+.fa-yelp{
+  background-color: #D9A0AF;
+  color: white;
+}
+.active {
+  background-color: #D9B573; 
+}
+/* Navigation Bar Stuff*/
+.navBar{
+  text-align:center;
+  width: wrap-content;
+  margin-bottom:3%;
+}
+ul {
+  list-style-type: none;
+  margin: auto;
+  overflow: hidden;
+  background-color: #D9A0AF;
+  padding-top:10px;
+  padding-bottom:10px;
+  width: wrap-content;
+  position:sticky;
+  position:-webkit-sticky;
+}
+li {
+  font-family: 'Bebas Neue', cursive;
+  font-size:26px;
+  display:inline-block;
+  text-align:center;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #BF6094;
+}
+
+/* Slideshow Stuff */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 500px;
+  overflow:hidden;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* height: 100%;
+padding-bottom: 33%;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat; */
+
+/* Columns Stuff */
+.row{
+  margin-top:8%;
+  margin-bottom:8%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  margin-left:10%;
+}
+.column {
+  float: left;
+  width: 18%;
+  padding: 10px;
+}
+.column h2{
+  color:#D9A0AF;
+  font-family: 'Bebas Neue', cursive;
+  font-size:28px;
+}
+.column p {
+  font-family: 'Old Standard TT', serif;
+  font-size:18px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+#footer{
+  text-align:center;
+  width: wrap-content;
+  height: 75px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #D9A0AF;
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family: 'Old Standard TT', serif;
+}
+</style>
       <script src="script.js"></script>
   </body>
 </html>
