@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+     <title>Andrew's Mock-Up</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marck+Script&family=Old+Standard+TT&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+        <div class="headerSection">
+      <div class="headerMain">
+        <h1 id="titleHead" class="headers">Andrew's Pastries</h1>
+      </div>
+      <div class="socialMediaBar">
+        <a href="https://www.facebook.com/andrewspastries/" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a> 
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-yelp"></a>
+     </div>
+    </div> 
+    <div class="navBar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Catering</a></li>
+        <li><a href="#">Order Online</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div>
+    <div id="hero" class="info">
+      <h1 style="font-family: 'Bebas Neue', cursive; color: #BF6094;">Where We Come From</h1>
+       <p id="aboutUsPara">This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great.</p>
+      <img id="crew" src="crew.jpg">
+    </div>
+    <div id="whoWeAre">
+      <hr>
+      <h1 style="font-family: 'Bebas Neue', cursive; color: #BF6094;">Who We Are</h1>
+      <hr>
+      <p id="aboutUsPara2">This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great. This is stuff about us. We are so great.</p>
+    </div>
+    <div id="pictureNext">
+      <img id="group" src="precious.jpg"/>
+    </div>
+    <div class="sectionHeader">
+      <div id="meetOurCrew">
+        <hr>
+        <h1> Meet Our Crew </h1>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img class="imageCSS" src="costumeCrew.jpg">
+          <h2>Costume Crew</h2>
+            <p>We are so great, this is stuff about us</p>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="group.jpg">
+          <h2>Group Pic</h2>
+          <p>We are so great, this is stuff about us</p>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="focused.jpg">
+          <h2>Hella Focused</h2>
+          <p>We are so great, this is stuff about us</p>
+        </div>
+        <div class="column">
+          <img class="imageCSS" src="cuteGrandpa.jpg">
+          <h2>Cute Grandpa</h2>
+          <p>We are so great, this is stuff about us</p>
+        </div>
+      </div>
+    <div id="footer">
+    <p>Andrew's Pastries 2020 | SitesWithRachel</p>
+  </div>
+  <style>
+    /* font-family: 'Satisfy', cursive; <-- Title Header
+font-family: 'Marck Script', cursive; <-- Title Header op 2
+font-family: 'Bebas Neue', cursive; <-- Page/Menu Header
+font-family: 'Old Standard TT', serif; <-- Content Font
+*/
+
+/* Header Stuff */
+.headerSection{
+  display:flex;
+}
+#titleHead{
+  font-family: 'Marck Script', cursive;
+  color: #D9A0AF;
+  margin-left:25%;
+  margin-top:1%;
+  margin-bottom:1%;
+  font-size: 62px;
+}
+.headerMain{
+  width:50%;
+}
+/* Social Media Bar Stuff */
+.socialMediaBar{
+  flex-grow:1;
+  overflow:auto;
+  margin-left:20%;
+  margin-top:1%;
+}
+.fa {
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  height: 40px;
+  padding:12px;
+}
+.fa:hover {
+  opacity: 0.7;
+  background-color: #BF6094; 
+}
+.fa-facebook {
+  background-color: #D9A0AF;
+  color: white;
+}
+.fa-twitter {
+  background-color: #D9A0AF;
+  color: white;
+}
+.fa-instagram {  
+  background-color: #D9A0AF;
+  color: white;
+}
+.fa-yelp{
+  background-color: #D9A0AF;
+  color: white;
+}
+.active {
+  background-color: #D9B573; 
+}
+/* Navigation Bar Stuff */
+.navBar{
+  text-align:center;
+  width: wrap-content;
+  margin-bottom:3%;
+}
+ul {
+  list-style-type: none;
+  margin: auto;
+  overflow: hidden;
+  background-color: #D9A0AF;
+  padding-top:10px;
+  padding-bottom:10px;
+  width: wrap-content;
+  position:sticky;
+  position:-webkit-sticky;
+}
+li {
+  font-family: 'Bebas Neue', cursive;
+  font-size:26px;
+  display:inline-block;
+  text-align:center;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #BF6094;
+}
+/* End Navigation Bar Stuff */
+#crew{
+  max-width:85%;
+  max-height:30%;
+}
+.info{
+  max-width:80%;
+  max-height:40%;
+  text-align:center;
+  margin:auto;
+}
+#whoWeAre{
+  text-align:center;
+  margin-top:10%;
+}
+#aboutUsPara{
+  margin-bottom:5%;
+  margin-top:5%;
+  font-family: 'Old Standard TT', serif; 
+  font-size:18px;
+}
+#aboutUsPara2{
+  float:left;
+  width:35%;
+  margin-left:15%;
+  font-family: 'Old Standard TT', serif; 
+  font-size:18px;
+  }
+#group{
+  width:35%;
+  max-height:20%;
+  margin-left:5%
+}
+#meetOurCrew{
+  width:100%;
+  clear:both;
+  font-family: 'Bebas Neue', cursive; 
+  color: #BF6094; 
+  text-align:center;
+}
+
+/* Columns Stuff */
+.row{
+  margin-top:2%;
+  margin-bottom:10%;
+  display: flex;
+  justify-content: center;
+  height: 325px;
+}
+.column {
+  float: left;
+  width: 18%;
+  padding: 10px;
+}
+.column h2{
+  color:#000000;
+  font-family: 'Bebas Neue', cursive;
+  font-size:28px;
+}
+.column p {
+  font-family: 'Old Standard TT', serif;
+  font-size:18px;
+  margin-right:1%;
+}
+.imageCSS{
+  max-height:100%;
+  max-width:100%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+#footer{
+  text-align:center;
+  width: wrap-content;
+  height: 75px;
+  margin: auto;
+  margin-top:5%;
+  overflow: hidden;
+  background-color: #D9A0AF;
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family: 'Old Standard TT', serif;
+}
+<style>
+    <script src="script.js"></script>
+  </body>
+</html>
