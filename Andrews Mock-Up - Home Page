@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Andrew's Mock-Up</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marck+Script&family=Old+Standard+TT&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="headerSection">
+      <div class="headerMain">
+        <h1 id="titleHead" class="headers">Andrew's Pastries</h1>
+      </div>
+      <div class="socialMediaBar">
+        <a href="https://www.facebook.com/andrewspastries/" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a> 
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-yelp"></a>
+     </div>
+    </div> 
+    <div class="navBar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Catering</a></li>
+        <li><a href="#">Order Online</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="purdytarts.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="carrotcake.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="cupcakeDream.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="donuts.png" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h2>Located At</h2>
+      <p>1282 Delaware Ave</p>
+      <p>Marion, Ohio 43302</p>
+    </div>
+    <div class="column">
+      <h2>Business Hours</h2>
+      <p><b>Monday:</b> 6:00AM-1:00PM</p>
+      <p><b>T/W/Th/F:</b> 6:00AM-2:00PM</p>
+      <p><b>Saturday:</b> 6:00AM-1:00PM</p>
+      <p><b>Sunday:</b> CLOSED </p>
+    </div>
+    <div class="column">
+      <h2>Order Online</h2>
+      <p>Add your content here</p>
+    </div>
+    <div class="column">
+      <h2>Contact Us</h2>
+      <p><img src="smartphone.png">(740)-387-3830</p>
+      <p><img src="multimedia.png"> orders@andrews.com</p>
+    </div>
+  </div>
+  <div id="footer">
+    <p>Andrew's Pastries 2020 | SitesWithRachel</p>
+  </div>
+      <script src="script.js"></script>
+  </body>
+</html>
