@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Button Color Changer</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="column">
+      <div id="bubble1" class="bubbles"></div>
+      <div id="bubble2" class="bubbles"></div>
+      <div id="bubble3" class="bubbles"></div>
+      <div id="bubble4" class="bubbles"></div>
+    </div>
+    <style>
+      .bubbles{
+        padding: 25px;
+        margin: 25px;
+        border: solid black 2px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+/* 
+bubble1 = document.getElementById("bubble1");
+bubble1.addEventListener("click", switcherRoo);
+bubble2 = document.getElementById("bubble2");
+bubble2.addEventListener("click", switcherRoo);
+bubble3 = document.getElementById("bubble3");
+bubble3.addEventListener("click", switcherRoo);
+bubble4 = document.getElementById("bubble4");
+bubble4.addEventListener("click", switcherRoo);*/
+
+/*let colorIndex1 = 0;
+let colorIndex2 = 0;
+let colorIndex3 = 0;
+let colorIndex4 = 0;
+
+$(document).ready(function() {
+//console.log("test123");
+  $("#bubble1").click(function(){
+    colorIndex1++;
+    //console.log(colorIndex1);
+    switch(colorIndex1){
+      case 1: 
+          $("#bubble1").css("background-color", "red");
+          break;
+      case 2: 
+          $("#bubble1").css("background-color", "orange");
+          break;
+      case 3:
+          $("#bubble1").css("background-color", "yellow");
+          break;
+      case 4:
+          $("#bubble1").css("background-color", "green");
+          break;
+      case 5:
+          $("#bubble1").css("background-color", "blue");
+          break;
+      case 6:
+          $("#bubble1").css("background-color", "violet");
+          break;
+      default:
+          $("#bubble1").css("background-color", "transparent");
+          colorIndex1 = 0;
+          break;
+    }
+  });
+});
+$(document).ready(function() {
+  $("#bubble2").click(function(){
+    colorIndex2++;
+    //console.log(colorIndex2);
+    switch(colorIndex2){
+      case 1: 
+          $("#bubble2").css("background-color", "red");
+          break;
+      case 2: 
+          $("#bubble2").css("background-color", "orange");
+          break;
+      case 3:
+          $("#bubble2").css("background-color", "yellow");
+          break;
+      case 4:
+          $("#bubble2").css("background-color", "green");
+          break;
+      case 5:
+          $("#bubble2").css("background-color", "blue");
+          break;
+      case 6:
+          $("#bubble2").css("background-color", "violet");
+          break;
+      default:
+          $("#bubble2").css("background-color", "transparent");
+          colorIndex2 = 0;
+          break;
+    }
+  });
+});
+$(document).ready(function() {
+  $("#bubble3").click(function(){
+    colorIndex3++;
+    //console.log(colorIndex3);
+    switch(colorIndex3){
+      case 1: 
+          $("#bubble3").css("background-color", "red");
+          break;
+      case 2: 
+          $("#bubble3").css("background-color", "orange");
+          break;
+      case 3:
+          $("#bubble3").css("background-color", "yellow");
+          break;
+      case 4:
+          $("#bubble3").css("background-color", "green");
+          break;
+      case 5:
+          $("#bubble3").css("background-color", "blue");
+          break;
+      case 6:
+          $("#bubble3").css("background-color", "violet");
+          break;
+      default:
+          $("#bubble3").css("background-color", "transparent");
+          colorIndex3 = 0;
+          break;
+    }
+  });
+});
+$(document).ready(function() {
+  $("#bubble4").click(function(){
+    colorIndex4++;
+    //console.log(colorIndex4);
+    switch(colorIndex4){
+      case 1: 
+          $("#bubble4").css("background-color", "red");
+          break;
+      case 2: 
+          $("#bubble4").css("background-color", "orange");
+          break;
+      case 3:
+          $("#bubble4").css("background-color", "yellow");
+          break;
+      case 4:
+          $("#bubble4").css("background-color", "green");
+          break;
+      case 5:
+          $("#bubble4").css("background-color", "blue");
+          break;
+      case 6:
+          $("#bubble4").css("background-color", "violet");
+          break;
+      default:
+          $("#bubble4").css("background-color", "transparent");
+          colorIndex4 = 0;
+          break;
+    }
+  });
+});
+*/
