@@ -1,0 +1,32 @@
+let bubbles = document.getElementsByClassName("bubbles");
+let colorIndex = 0;
+
+$(document).ready(function() {
+  $(bubbles).click(function(){
+  colorIndex++;
+    switch(colorIndex){
+      case 1: 
+          $(this).css("background-color", "red");
+          break;
+      case 2: 
+          $(this).css("background-color", "orange");
+          break;
+      case 3:
+          $(this).css("background-color", "yellow");
+          break;
+      case 4:
+          $(this).css("background-color", "green");
+          break;
+      case 5:
+          $(this).css("background-color", "blue");
+          break;
+      case 6:
+          $(this).css("background-color", "violet");
+          break;
+      default:
+          $(this).css("background-color", "transparent");
+          colorIndex = 0;
+          break;
+    }
+  });
+});
