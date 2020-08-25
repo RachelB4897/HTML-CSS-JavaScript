@@ -1,0 +1,44 @@
+let bubbles = document.getElementsByClassName("bubbles");
+let colorIndex1 = 0;
+let colorIndex2 = 0;
+let colorIndex3 = 0;
+let colorIndex4 = 0;
+let colors = ["transparent", "red", "orange", "yellow", "green", "blue", "violet"];
+
+$(document).ready(function(){
+  $(bubbles).click(function(){
+      console.log($(this).attr("id"));
+      if ($(this).attr("id") == "bubble1"){
+        colorIndex1++;
+        $(this).css("background-color", colors[colorIndex1]);
+        console.log(colorIndex1);
+        if(colorIndex1 >= colors.length - 1){
+          colorIndex1 = 0;
+        } 
+      }
+      else if ($(this).attr("id") == "bubble2"){
+        colorIndex2++;
+        $(this).css("background-color", colors[colorIndex2]);
+        console.log(colorIndex2);
+        if(colorIndex2 >= colors.length - 1){
+          colorIndex2 = 0;
+        } 
+      }
+      else if ($(this).attr("id") == "bubble3"){
+        colorIndex3++;
+        $(this).css("background-color", colors[colorIndex3]);
+        console.log(colorIndex3);
+        if(colorIndex3 >= colors.length - 1){
+          colorIndex3 = 0;
+        } 
+      }
+      else if ($(this).attr("id") == "bubble4"){
+        colorIndex4++;
+        $(this).css("background-color", colors[colorIndex4]);
+        console.log(colorIndex4);
+        if(colorIndex4 >= colors.length - 1){
+          colorIndex4 = 0;
+        } 
+      }
+  });
+});
